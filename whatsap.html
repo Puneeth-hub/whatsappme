@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #25D366;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .whatsapp-button img {
+            width: 30px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+        .whatsapp-button:hover img {
+            transform: scale(1.1);
+        }
+
+        @keyframes click-indication {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .whatsapp-button:active {
+            animation: click-indication 0.3s ease;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="https://wa.me/+918142424331?text=hello buddy" target="_blank">
+        <button class="whatsapp-button">
+            <img src="./logowhats.png" alt="WhatsApp Chat">
+            Chat
+        </button>
+        <p>👆👆👆👆</p>
+    </a>
+</body>
+</html>
